@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' href='./css/style.css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+  <body>
+
+    <h1>{{title}}</h1>
+    <p>Welcome to {{description}}</p>
+    <div class="row">
+        <div id = "lstLocs" class="list-group col-6"></div>
+        <div id ="slcCard" class="card mx-auto " style="width: 25%;">
+            <img id="slcImage" class="card-img-top" width="100%" height= "200vw" object-fit="cover" >
+            <div class="card-body">
+                <h5 id="slcTitle" class="card-title"></h5>
+                <p id="slcBody" class="card-text"></p>
+                <p id="slcRating" class="card-text"></p>
+                <p id="slcLocation" class="card-text"></p>
+                <p id="slcDate" class="card-text"></p>
+                
+            </div>
+        </div>
+
+    </div><br><br>
+<div class="jumbotron col-6">
+  <h1 class="display-8">Add your Spot!</h1>
+  
+  <hr class="my-4">
+
+  <form name = "listingForm">
+    <div class="form-group ">
+      <input type="text" placeholder="Enter a Title" class="form-control col-4" id="title"><br><br>
+      <textarea  placeholder="Add a Description" class="form-control " id="body"></textarea><br><br>
+      <input type="text" placeholder="Rating (out of 10)" class="form-control col-4" id="rating"><br><br>
+      
+      <div class="row">
+          <input type="text" placeholder="Latitude" class="form-control col-2 mr-2 ml-3" id="lat">
+          <input type="text" placeholder="Longitude" class="form-control col-2 mr-2 ml-3" id="lon">
+      </div>
+      <label for="date" class="col-4 col-form-label">When did you visit?</label>
+      <input type="date" class="form-control col-4" id="date" ><br><br>
+      <input type="text" placeholder="Add an image URL" class="form-control col-6" id="imageURL"><br><br>
+      <button type="submit" class="btn btn-dark">Submit</button>
+    </div>
+  </form>
+</div>
+   
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
+    <script src="scripts/index.js"></script>  
+  </body>
+</html>
