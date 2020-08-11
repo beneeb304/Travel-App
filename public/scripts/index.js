@@ -93,7 +93,7 @@ inputForm.addEventListener('submit',(e)=>{
         "dateVisited": visitDate.value
     }
 
-    fetch('http://localhost:3000/entries', {
+    fetch('/entries/', {
         method: 'POST',
         headers: {'Content-Type': 'application/json',},
         body: JSON.stringify(post_request_object),
