@@ -79,7 +79,7 @@ inputForm.addEventListener('submit',(e)=>{
     const des = document.querySelector('#body');
     const rating = document.querySelector('#rating');
     const lat = document.querySelector('#lat');
-    const lon = document.querySelector('#lat');
+    const lon = document.querySelector('#lon');
     const image = document.querySelector('#imageURL');
     const visitDate=document.querySelector('#date')
 
